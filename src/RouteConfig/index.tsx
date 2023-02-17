@@ -8,7 +8,8 @@ const Roles = {
     login: '/',
     businessDashboiard: '/business/dashboard',
     admin: '/dashboard',
-    home:"/home/"
+    home:"/home/",
+    homeID:"/home/[id]"
   };
 
 const routeConfig: { [key: string]: { [key: string]: string } } = {
@@ -20,6 +21,7 @@ const routeConfig: { [key: string]: { [key: string]: string } } = {
     default: RouteNames.businessDashboiard,
     [RouteNames.businessDashboiard]: RouteNames.businessDashboiard,
     [RouteNames.home]: RouteNames.home,
+    [RouteNames.homeID]: RouteNames.homeID,
   },
   [Roles.admin]: {
     default: RouteNames.admin,

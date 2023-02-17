@@ -16,7 +16,6 @@ const withAuth =
                 const [isValidRoute, setIsValidRoute] = useState<boolean>(false);
 
                 useEffect(() => {
-                    console.log("allowedRole?.includes(role)",routeConfig[role])
                     if (!isLoggedIn && !routeConfig.auth[router.pathname]) {
                         setIsValidRoute(false);
                         router.push(routeConfig.auth.default);
